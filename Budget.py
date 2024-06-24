@@ -62,8 +62,8 @@ frames = []
 
 for month in months:
     # Dynamische Dateipfade erstellen
-    csv_file_path = f'D:\\OneDrive\\Documents\\_Budget\\raiffeisen_export\\Konto_CH4080808001663063511_{month}.xlsx'
-    pdf_file_path = f'D:\\OneDrive\\Documents\\_Budget\\raiffeisen_export\\Kreditkarten_Rechnung_{month}.pdf'
+    csv_file_path = f'Pathto\\_Budget\\BANKFILE_{month}.xlsx'
+    pdf_file_path = f'Pathto\\raiffeisen_export\\CREDITCARDFILE_{month}.pdf'
     
     # Verarbeiten der CSV-Datei
     try:
@@ -96,7 +96,7 @@ if frames:
     all_data = pd.concat(frames, ignore_index=True)
     
     # Pfad zur vorhandenen Datei und das Blatt "Ausgaben"
-    existing_file_path = r'D:\OneDrive\Documents\_Budget\Budget_2024.xlsx'
+    existing_file_path = r'PathtoBUDGETFILE.xlsx'
     sheet_name = 'Ausgaben'
     
     # Lade die existierende Excel-Datei und die bestehenden Daten
